@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "line-between": "/components/common/LineBetween",
+    "commodity-list": "/components/common/CommodityList"
+  }
+}

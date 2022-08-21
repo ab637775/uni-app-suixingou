@@ -1,0 +1,36 @@
+/* 全局CSS文件 */
+
+/* 默认字体颜色 */
+.f-color {
+	color: #636263
+}
+
+/* 选中字体颜色 */
+.f-active-color {
+	color: #49bdfb;
+}
+
+/* 背景颜色 */
+.bg-color {
+	background-color: #42b7fb;
+}
+
+/*商品详情颜色*/
+.d-color {
+	color: #FF5000;
+}
+
+/* 选择颜色 */
+.d-s-color {
+	color: #999999;
+}
+
+::-webkit-scrollbar {
+	/* 隐藏滚动条，但依旧具备可以滚动的功能 */
+	display: none;
+	width: 0 !important;
+	height: 0 !important;
+	-webkit-appearance: none;
+	background: transparent;
+	color: transparent;
+}

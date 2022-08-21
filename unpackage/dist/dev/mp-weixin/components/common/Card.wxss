@@ -1,0 +1,10 @@
+.card.data-v-3879f0e9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.card .card-name.data-v-3879f0e9 {
+  padding: 0 20rpx;
+}
+

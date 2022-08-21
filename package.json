@@ -1,0 +1,14 @@
+{
+    "id": "lb-tabbar",
+    "name": "lb-tabbar自定义tabbar",
+    "version": "v1.0.3",
+    "description": "通用自定义tabbar，兼容App、H5、各小程序",
+    "keywords": [
+        "tabbar"
+    ],
+    "dependencies": {
+        "image-tools": "^1.4.0",
+        "jsonwebtoken": "^8.5.1",
+        "uview-ui": "^2.0.33"
+    }
+}

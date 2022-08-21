@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "line-between": "/components/common/LineBetween"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "shop-list": "/components/common/ShopList"
+  }
+}
