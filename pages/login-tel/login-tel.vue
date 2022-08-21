@@ -156,25 +156,25 @@
 							// action校验类型为“注册”
 							// expMinute短信的有效期，5分钟
 							// 注意：不要在uniCloud函数里写注释，转为JSON格式时会出错
-							// uniCloud.callFunction({
-							// 	name: 'sendSms',  
-							// 	data: {
-							// 		phone: this.telData.phone.number,
-							// 		data: {
-							// 			name: '随心购',
-							// 			code: this.randomSms(),		
-							// 			action: '注册',			
-							// 			expMinute: '5',			
-							//         }
-							// 	}
-							// }).then(res => {
-							// 	console.log('success', res);
-							// }).catch(msg => {
-							// 	console.error(msg);
-							// });
+							uniCloud.callFunction({
+								name: 'sendSms',  
+								data: {
+									phone: this.telData.phone.number,
+									data: {
+										name: '随心购',
+										code: this.randomSms(),		
+										action: '注册',			
+										expMinute: '5',			
+							        }
+								}
+							}).then(res => {
+								console.log('success', res);
+							}).catch(msg => {
+								console.error(msg);
+							});
 							// 	console.log('this.telData.phone.number', this.telData.phone.number);			
 							
-							this.randomSms()	//测试验证码											
+							// this.randomSms()	//测试验证码											
 							uni.showLoading({
 								title: '正在获取验证码'
 							})
@@ -209,7 +209,7 @@
 				}	
 				this.newCode = res
 				// 调试时再解开
-				console.log('新产生的验证码为',this.newCode);
+				// console.log('新产生的验证码为',this.newCode);
 				return res;
 			}
 		
