@@ -8,9 +8,9 @@
 注意：每次修改server文件夹中的内容后都必须重新npm start启动服务器，更新修改的内容
 修正：可以使用nodemon start来启动，可自动更新服务器
 服务器默认运行在http://localhost:3000端口
-windows系统可以通过在服务器根目录运行ipconfig命令查询ip地址，我查询到自己服务器的ip地址为192.168.1.3
+windows系统可以通过在服务器根目录运行ipconfig命令查询ip地址，我查询到自己服务器的ip地址为192.168.x.x (x为对应数字)
 注意：本地服务器必须用查询的ip地址来代替网址中的localhost，否则在前端中调用接口时会出现跨域问题，所以我的前端项目应当调用的接口
-根路径为http://192.168.1.3:3000
+根路径为http://192.168.x.x:3000
 3.设置服务器
 在服务器的app.js文件中添加解决跨域问题的代码
 var app = express();
@@ -37,7 +37,7 @@ router.get('/data/1', function(req, res, next) {
 例如在pages/index/index.vue中
 		onLoad() {
 			uni.request({
-				url: 'http://192.168.1.3:3000/data/1',
+				url: 'http://192.168.x.x:3000/data/1',
 				success: (res) => {
 					console.log(res);
 				}
